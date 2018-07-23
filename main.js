@@ -1,3 +1,28 @@
+function copyFunction() {
+	var range = document.createRange();
+
+	range.selectNode(document.getElementById("emailid"));
+	window.getSelection().addRange(range);
+	document.execCommand("copy");
+	try {
+		// Now that we've selected the text, execute the copy command
+		var successful = document.execCommand('copy');
+		successful ? console.log('copied') : console.log("didn't work");
+		console.log(range.commonAncestorContainer.childNodes[5].innerHTML);
+		var tooltip = document.getElementById("tooltip");
+		tooltip.innerHTML = "Copied the email id. You can paste it now.";
+		tooltip.classList.add("active-tooltip");
+	} catch (err) {
+		alert('Unable to copy, update your browser');
+	}
+}
+
+function outCopyFunc() {
+	var tooltip = document.getElementById("tooltip");
+	tooltip.innerHTML = "Copy to clipboard";
+	tooltip.classList.remove("active-tooltip");
+}
+
 /* For projects animation */
 var acc = document.getElementsByClassName("accordion");
 var i;
