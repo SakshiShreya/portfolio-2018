@@ -181,6 +181,16 @@ ul {
 	background: var(--bgcolor-2);
 	color: var(--black-text);
 }
+.education img {
+	width: 15%;
+	margin-left: 2%;
+	float: right;
+	vertical-align: text-top;
+}
+.education h4 {
+	display: inline;
+	vertical-align: text-bottom;
+}
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxEXPERIENCExxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .experience {
@@ -192,10 +202,24 @@ ul {
 .experience a:hover {
 	color: var(--black-text)
 }
+.experience img {
+	width: 15%;
+	margin-left: 2%;
+	float: right;
+	vertical-align: text-top;
+}
+.experience h4 {
+	display: inline;
+	vertical-align: text-bottom;
+}
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxSKILLSxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .skills {
 	background: var(--bgcolor-4);
+}
+.skills img {
+	height: calc(2 * var(--text-size));
+	margin-right: var(--text-size);
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxPROJECTSxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
